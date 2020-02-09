@@ -112,6 +112,7 @@ header {
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
+  z-index: 999;
 }
 
 .nav-list {
@@ -606,5 +607,35 @@ input[type="submit"]:hover {
 
   .profile-img {
     margin: 0 0 7rem 0;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-img {
+    margin: 0 0 2rem 0;
+    order: 1;
+  }
+
+  .portfolio-description {
+    margin: 0;
+    order: 2;
+  }
+
+  .timeline p {
+    font-size: 1.6rem;
+  }
+
+  .timeline .date::before {
+    font-size: 1.4rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .up {
+    right: 2rem;
   }
 }
